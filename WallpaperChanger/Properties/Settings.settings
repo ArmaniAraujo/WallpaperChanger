@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WallpaperChanger.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="key" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">16798870-3b75722e0d8caeefc7b1664bd</Value>
+    </Setting>
+    <Setting Name="imageList" Type="WallpaperChanger.JsonObject" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
