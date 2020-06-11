@@ -46,9 +46,14 @@ namespace WallpaperChanger
                 if (response == null || response.Hits.Count() == 0)
                 {
                     MessageBox.Show("Couldn't find any pictures. Try another search term");
+                    applyBT.Enabled = false;
+                    randomizeBT.Enabled = false;
                 }
                 else
                 {
+                    applyBT.Enabled = true;
+                    randomizeBT.Enabled = true;
+
                     // Stores the obj that is returned
 
                     Properties.Settings.Default.imageList = response;
@@ -91,6 +96,16 @@ namespace WallpaperChanger
                 string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\Wallpaper Changer\res";
                 Wallpaper.ChangeWallpaper(path, true);
                 MessageBox.Show("Wallpaper Applied!");
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            JsonObject obj = Properties.Settings.Default.imageList;
+            if (obj == null || obj.Hits.Count() == 0)
+            {
+                applyBT.Enabled = false;
+                randomizeBT.Enabled = false;
             }
         }
     }

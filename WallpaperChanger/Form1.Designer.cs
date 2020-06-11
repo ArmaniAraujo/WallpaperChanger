@@ -83,10 +83,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(12, 304);
+            this.label4.Location = new System.Drawing.Point(28, 337);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 13);
+            this.label4.Size = new System.Drawing.Size(147, 19);
             this.label4.TabIndex = 16;
             this.label4.Text = "Images provided by:";
             // 
@@ -140,7 +141,7 @@
             // pixabayLogo
             // 
             this.pixabayLogo.Image = global::WallpaperChanger.Properties.Resources.pixabay_logo;
-            this.pixabayLogo.Location = new System.Drawing.Point(12, 320);
+            this.pixabayLogo.Location = new System.Drawing.Point(181, 326);
             this.pixabayLogo.Name = "pixabayLogo";
             this.pixabayLogo.Size = new System.Drawing.Size(100, 50);
             this.pixabayLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,6 +175,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Wallpaper Changer v2.0";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pixabayLogo)).EndInit();
